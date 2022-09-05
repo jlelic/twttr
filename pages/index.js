@@ -28,7 +28,7 @@ export default function Home({ tweet, relatedTweets }) {
 
             <Tweet tweet={tweet}/>
             <div className={styles.grid}>
-                {relatedTweets.map(tweet => <Tweet tweet={tweet}/>)}
+                {relatedTweets.map(tweet => <Tweet key={tweet.id} tweet={tweet}/>)}
             </div>
         </>
     )
